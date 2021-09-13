@@ -1,0 +1,17 @@
+modules:
+    index:
+        name: Workshop Overview
+        exit_sign: Start Workshop
+    labs/testcase:
+        name: Test Case       
+    finish:
+        name: Workshop Summary
+        exit_sign: Finish Workshop
+config:
+    # vars:
+    # - name: LAB_SLOT_ID
+    #   value: 240
+    # - name: LAB_DOMAIN
+    #   value: pez.pivotal.io
+    # - name: LAB_CF_DEPLOYID
+    #   value: cf-a7b9ebc208b14dec252e      

@@ -1,0 +1,7 @@
+name: Kubernetes Fundamentals
+
+modules:
+    activate:
+    - index
+    - labs/testcase
+    - finish
