@@ -1,0 +1,9 @@
+apiVersion: installers.tmc.cloud.vmware.com/v1alpha1
+kind: AgentInstall
+metadata:
+  name: tmc-agent-installer-config
+  namespace: svc-tmc-c20
+spec:
+  operation: INSTALL
+  registrationLink: https://chartercommunications.tmc.cloud.vmware.com/installer?id=bebae0539dc8a17f469d70b2529d31c8da90c36dcc2c72062c651ab6e15f6a18&source=registration&type=tkgs
+  
