@@ -10,7 +10,7 @@ clean:
 rebuild: clean build
 
 run:
-	docker run --name tanzu-advanced-poc -v $$PWD/deploy:/deploy -v $$PWD/config/kube.conf:/root/.kube/config -td tanzu-advanced-poc:latest
+	docker run --name tanzu-advanced-poc -v $$PWD/scenarios:/scenarios -v $$PWD/config/kube.conf:/root/.kube/config -td tanzu-advanced-poc:latest
 	docker exec -it tanzu-advanced-poc bash -l
 
 join:
