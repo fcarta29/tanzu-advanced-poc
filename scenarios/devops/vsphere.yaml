@@ -1,0 +1,9 @@
+CONTROL_PLANE_VM_CLASS: guaranteed-small
+DEFAULT_STORAGE_CLASS: tanzu
+WORKER_STORAGE_CLASS: tanzu
+CONTROL_PLANE_STORAGE_CLASS: tanzu
+WORKER_VM_CLASS: guaranteed-small
+NAMESPACE: developer
+CLUSTER_PLAN: dev
+INFRASTRUCTURE_PROVIDER: tkg-service-vsphere
+SERVICE_DOMAIN: cluster.local

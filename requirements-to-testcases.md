@@ -8,3 +8,11 @@ RQ03&#8239;-&#8239;02 | CaaS platform shall provide role based access control by
 RQ04&#8239;-&#8239;01 | CaaS control plane shall provide automation/tools/API for onboarding existing kubernetes clusters | TODO[fcarta] - TMC | |
 RQ05&#8239;-&#8239;01 | CaaS platform shall provide automation/tools/API for auditing/ validating the configuration of the clusters | TODO[fcarta] - TMC | |
 RQ06&#8239;-&#8239;01 | CaaS control plane shall provide tools for accessing the underlying virtual machines that power the kubernetes clusters in a secure way | TODO[fcarta] - add ssh | |
+RQ07&#8239;-&#8239;02 | CaaS control plane shall provide automation/tools/API for creation of kubernetes clusters | [SC02-TC01](scenarios/devops/sc02-tc01.md) [SC02-TC01-A](scenarios/devops/sc02-tc01-a.md) | |
+RQ08&#8239;-&#8239;02 | CaaS control plane shall provide automation/tools/API for modifying the kubernetes clusters | [SC02-TC04](scenarios/devops/sc02-tc04.md) | |
+RQ09&#8239;-&#8239;02 | CaaS control plane shall provide automation/tools/API for deleting the kubernetes clusters | [SC02-TC05](scenarios/devops/sc02-tc05.md) | |
+RQ10&#8239;-&#8239;02 | CaaS platform shall provide capabilities to create manage clusters in various cloud providers(AWS in particular) | TODO[] | |
+RQ11&#8239;-&#8239;02 | CaaS platform shall provide the role based access control for kubernetes clusters as well | TODO[] | |
+RQ12&#8239;-&#8239;02 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure ingress/load balancer | TODO[] | |
+
+
