@@ -7,14 +7,14 @@ spec:
     version: v1.18
   topology:
     controlPlane:
-      class: guaranteed-small
+      class: guaranteed-medium
       count: 1
-      storageClass: tanzu
+      storageClass: vsan-default-storage-policy
     workers:
-      class: guaranteed-small
+      class: guaranteed-xlarge
       count: 1
-      storageClass: tanzu
+      storageClass: vsan-default-storage-policy
   settings:
     storage:
-      classes: ["tanzu"]              #Named PVC storage classes
-      defaultClass: tanzu                    #Default PVC storage class
+      classes: ["vsan-default-storage-policy"]              #Named PVC storage classes
+      defaultClass: vsan-default-storage-policy                    #Default PVC storage class
