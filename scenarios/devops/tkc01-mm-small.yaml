@@ -1,28 +1,20 @@
-apiVersion: run.tanzu.vmware.com/v1alpha1    
-kind: TanzuKubernetesCluster                 
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
 metadata:
-  name: tkc01-mm-small                               
-  namespace: ns01                    
+  name: tkc-1
 spec:
   distribution:
-    version: v1.16.8+vmware.1-tkg.3.60d2ffd    
+    version: v1.18
   topology:
     controlPlane:
-      count: 3                                                        
-      class: best-effort-small                
-      storageClass: wrkldmgmt-storage-policy  #Specific storage class for control plane       
+      class: guaranteed-medium
+      count: 1
+      storageClass: vsan-default-storage-policy
     workers:
-      count: 3                                                     
-      class: best-effort-small                        
-      storageClass: wrkldmgmt-storage-policy   #Specific storage class for workers     
+      class: guaranteed-xlarge
+      count: 1
+      storageClass: vsan-default-storage-policy
   settings:
-    network:
-      cni:
-        name: calico
-      services:
-        cidrBlocks: ["198.51.100.0/12"]        #Cannot overlap with Supervisor Cluster
-      pods:
-        cidrBlocks: ["192.0.2.0/16"]           #Cannot overlap with Supervisor Cluster
     storage:
-#      classes: ["gold", "silver"]              #Named PVC storage classes
-      defaultClass: wrkldmgmt-storage-policy    #Default PVC storage class
+      classes: ["vsan-default-storage-policy"]              #Named PVC storage classes
+      defaultClass: vsan-default-storage-policy                    #Default PVC storage class
