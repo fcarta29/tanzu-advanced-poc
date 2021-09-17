@@ -12,7 +12,7 @@ This test case procedure demonstrates a DevOps Engineer creating a Tanzu Kuberne
 
 ## Prerequisites
 
-* Completion of (SC01-TC01)[../operator/sc01-tc01.md], (SC01-TC02)[../operator/sc01-tc02.md]
+* Completion of [SC01-TC01](../operator/sc01-tc01.md), [SC01-TC02](../operator/sc01-tc02.md)
 * vSphere Administrator console and user credentials
 * DevOps Engineer console and user credentials
 * VC content library subscribed/imported for TKC nodes images and synchronized
@@ -25,29 +25,34 @@ This test case procedure demonstrates a DevOps Engineer creating a Tanzu Kuberne
 
 2. Select the **Configure** tab and under *Namespaces*, select **General**. In the *Content Library* section, select **Edit**. Then select the **radio button** next to the content library hosting the TKC node images. Select **OK** to save and close the window.
 
-3. Using the **DevOps Engineer** console and credentials, login to the SC API. Reference the [Configuration Supplement](../supplements/client-configuration.md##Login-to-a-Supervisor-Cluster-as-a-vCenter-Single-Sign-On-User) for details on obtaining the CLI tools and command syntax.
+3. Using the **DevOps Engineer** console and credentials, login to the SC API. 
+
+    <pre>kubectl vsphere login --vsphere-username ***DevOps_UserName***@vsphere.local --server=https://<b><i>SC_API_VIP</i></b>--insecure-skip-tls-verify</pre>
+
+    Expected:
+    <pre>Logged in successfully. <br> You have access to the following contexts: <br> <b><i>SC_API_VIP</i></b><br> ns01</pre> 
 
 4. Set the context for the *ns01* namespace with the command
 
-    ```sh
+    ```execute
     kubectl config use-context ns01
     ```
 
 5. Identify the vSphere storage-policy name, also the Kubernetes storage class name, by describing the namespace storage quota. Record the resource name, which is *`Storage_Resource_Name`*`.storageclass.storage.k8s.io/requests.storage`; omit the first "**`.`**" and everything to the right of it.
 
-    ```sh
+    ```execute
     kubectl describe resourcequota ns01-storagequota
     ```
 
 6. List the virtual machine image class options with the command
 
-    ```sh
+    ```execute
     kubectl describe virtualmachineclasses
     ```
 
 7. List the virtual machine images available in the content library with the command
 
-    ```sh
+    ```execute
     kubectl get virtualmachineimages
     ```
 
@@ -62,13 +67,13 @@ Save and close the file.
 
 10. Apply the TanzuKubernetesCluster spec to the SC namespace, *ns01*
 
-    ```sh
-    kubectl apply -f sc01/tkc01-mm-small.yaml
+    ```execute
+    kubectl apply -f sc01/tkc01-mm-small.yaml TODO[fcarta] - update link
     ```
 
 11. Monitor the TKC cluster deployment progress with the following commands. This step is complete when the output from `kubectl get tanzukubernetesclusters tkc01-mm-small` reports *`PHASE`* as **`running`** and `kubectl describe tanzukubernetesclusters tkc01-mm-small` reports the *`Node Status`* for all nodes as *`ready`*.
 
-    ```sh
+    ```execute
     kubectl get tanzukubernetesclusters
     kubectl describe tanzukubernetescluster tkc01-mm-small 
     ```
@@ -77,55 +82,55 @@ Save and close the file.
 
 13. Switch context to use the TKC context configuration
 
-    ```sh
+    ```execute
     kubectl config use-context tkc01-mm-small
     ```
 
 14. Verify status of SC, Kubernetes master and URL with the command
 
-    ```sh
+    ```execute
     kubectl cluster-info
     ```
 
 15. Verify status for all control-plane nodes and worker nodes
 
-    ```sh
+    ```execute
     kubectl get nodes
     ```
 
 16. Review the available TKC API resources with the command
 
-    ```sh
+    ```execute
     kubectl api-resources
     ```
 
 17. Review the available TKC API versions with the command
 
-    ```sh
+    ```execute
     kubectl api-versions
     ```
 
 18. Run to verify all TKC pods report either “Running” or “Completed”
 
-    ```sh
+    ```execute
     kubectl get pods -A
     ```
 
 19. Verify the default storage class is set to the vSphere storage policy with the command
 
-    ```sh
+    ```execute
     kubectl get sc
     ```
 
 20. Review the default clusterRoleBindings with the following command. Identify the clusterrolebindings for `group:vsphere.local:administrators` and `group:`*`Domain_Name:DevOps_GroupName`* or if user-level permissions set on namespace, `user:`*`Domain_Name:DevOps_UserName`*
 
-    ```sh
+    ```execute
     kubectl get clusterrolebindings
     ```
 
 21. View the associated `ClusterRole` and `Subject` for `group:vsphere.local:administrators` with the command
 
-    ```sh
+    ```execute
     kubectl describe clusterrolebinding vmware-system-auth-sync-wcp:ns01:group:vsphere.local:administrators
     ```
 
