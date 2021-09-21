@@ -79,12 +79,15 @@ Test Case ID | Test Case Description |
 [SC01-TC01](scenarios/operator/sc01-tc01.md) | Enable a vSphere Cluster for Kubernetes Workloads
 [SC01-TC02](scenarios/operator/sc01-tc02.md) | Create and Configure a Supervisor Cluster Namespace(s) with RBAC
 [SC01-TC03](scenarios/operator/sc01-tc03.md) | Create and Configure a Supervisor Cluster Namespace(s) with Resource Limitations
+[SC01-TC04](scenarios/operator/sc01-tc04.md) | Workload management Logging
 
 #### DevOps SC02: Provision and Manage Kubernetes Workload Clusters
 
 Test Case ID | Test Case Description |
 --- | --- |
-[SC02-TC01](scenarios/devops/sc02-tc01.md)| Provision a Tanzu Kubernetes Cluster Using the Tanzu Kubernetes Grid Service
-[SC02-TC02](scscenarios/devops/sc02-tc02.md)| Apply RBAC to a Tanzu Kubernetes Grid Cluster and Granting Developer Access
-[SC02-TC03](scenarios/devops/sc02-tc03.md)| Use Pod Security Policies with a Tanzu Kubernetes Cluster(s)
-
+[SC02-TC01](scenarios/devops/sc02-tc01.md) | Provision a Tanzu Kubernetes Cluster Using the Tanzu Kubernetes Grid Service
+[SC02-TC02](scscenarios/devops/sc02-tc02.md) | Apply RBAC to a Tanzu Kubernetes Grid Cluster and Granting Developer Access
+[SC02-TC03](scenarios/devops/sc02-tc03.md) | Use Pod Security Policies with a Tanzu Kubernetes Cluster(s)
+[SC02-TC04](scenarios/devops/sc02-tc04.md) | Create Guest Cluster
+[SC02-TC05](scenarios/devops/sc02-tc05.md) | Create Guest Cluster Mission Control ???
+[SC02-TC06](scenarios/devops/sc02-tc06.md) | Guest Cluster Logging with Fluentbit
