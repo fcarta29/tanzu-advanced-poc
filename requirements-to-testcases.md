@@ -14,5 +14,24 @@ RQ09&#8239;-&#8239;02 | CaaS control plane shall provide automation/tools/API fo
 RQ10&#8239;-&#8239;02 | CaaS platform shall provide capabilities to create manage clusters in various cloud providers(AWS in particular) | TODO[] | |
 RQ11&#8239;-&#8239;02 | CaaS platform shall provide the role based access control for kubernetes clusters as well | [SC02-TC02](scenarios/devops/sc02-tc02.md) | |
 RQ12&#8239;-&#8239;02 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure ingress/load balancer | TODO[] | |
+RQ13&#8239;-&#8239;02 | CaaS control plane shall support integration to log aggregators(Splunk) | [SC01-TC04](scenarios/operator/sc01-tc04.md), [SC02-TC06](scenarios/devops/sc02-tc06.md) | |
+RQ14&#8239;-&#8239;02 | CaaS control plane shall provide tools for monitoring the infrastructure(virtual machines, pods, containers, ingress) of the kubernetes clusters | TODO[dbott] - TO | |
+RQ15&#8239;-&#8239;02 | CaaS control plane shall alert based on thresholds | TODO[dbott] - TO | |
+RQ16&#8239;-&#8239;02 | CaaS control plane shall support integration to Charter situation manager(MoogSoft) | TODO[dbott] - TO | |
+RQ17&#8239;-&#8239;02 | CaaS platform shall provide monitoring dashboards for operators | TODO[dbott] - TO | |
+RQ18&#8239;-&#8239;02 | CaaS platform shall provide monitoring dashboards for developers | TODO[dbott] - TO | |
+RQ19&#8239;-&#8239;02 | CaaS platform shall provide options to create modify dashboards | TODO[dbott] - TO | |
+
+
+
+1.	
+2.	
+3.	
+4.	
+5.	
+6.	
+7.	
+
+
 
 
