@@ -12,7 +12,9 @@ rebuild: clean build
 run:
 	docker run --name tanzu-advanced-poc -v $$PWD/scenarios:/scenarios -v $$PWD/config/kube.conf:/root/.kube/config -td tanzu-advanced-poc:latest
 	docker exec -it tanzu-advanced-poc bash -l
-
+demo: 
+	docker run --name tanzu-advanced-poc -p 8080-8090:8080-8090 -v $$PWD/scenarios:/scenarios -v $$PWD/config/kube.conf:/root/.kube/config -td tanzu-advanced-poc:latest
+	docker exec -it tanzu-advanced-poc bash -l	
 join:
 	docker exec -it tanzu-advanced-poc bash -l
 
