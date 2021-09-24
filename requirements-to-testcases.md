@@ -23,3 +23,16 @@ RQ18&#8239;-&#8239;01 | CaaS platform shall provide monitoring dashboards for de
 RQ19&#8239;-&#8239;01 | CaaS platform shall provide options to create modify dashboards | TO Oveview [dbott] | |
 RQ20&#8239;-&#8239;01 | CaaS control plane shall provide curated platform(JVM, NodeJS, Python, Go) images |  | |
 RQ21&#8239;-&#8239;01 | CaaS control plane shall provide support for canary releases - app with 2 versions |  | |
+RQ22&#8239;-&#8239;01 | CaaS platform shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters | TO Oveview [dbott] | |
+RQ23&#8239;-&#8239;01 | CaaS control plane shall provide tools for collecting metrics from application level objects(JVM, application traces) | TO Oveview [dbott] | |
+RQ24&#8239;-&#8239;01 | CaaS control plane shall provide tools for provisioning load balancers/ingress for the kubernetes clusters |  | |
+RQ25&#8239;-&#8239;01 | CaaS platform shall provide delegated DNS for applications hosted in kubernetes clusters |  | |
+RQ26&#8239;-&#8239;01 | CaaS control plane shall provide GSLB features for applications hosted in kubernetes clusters |  | |
+RQ27&#8239;-&#8239;01 | CaaS control plane shall provide tools to modify load balancer configuration(application timeout, http2 being default) |  | |
+RQ28&#8239;-&#8239;01 | CaaS control plane shall provide L7 routing features based on user or http header information |  | |
+RQ29&#8239;-&#8239;01 | CaaS control plane shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters |  | |
+RQ30&#8239;-&#8239;01 | CaaS control plane shall provide end to end mutual TLS for application connectivity |  | |
+RQ31&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh |  | |
+RQ32&#8239;-&#8239;01 | CaaS platform shall provide application connectivity across deployment technologies(VM, kubernetes clusters |  | |
+RQ33&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network |  | |
+RQ34&#8239;-&#8239;01 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure GSLB |  | |
