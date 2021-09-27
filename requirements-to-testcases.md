@@ -3,10 +3,10 @@ ID | Requirement Description | Test Case ID(s) | Complete |
 --- | --- | --- | --- |
 RQ01&#8239;-&#8239;01 | CaaS control plane shall provide tools to support multiple tenants/clients | [SC01-TC02](scenarios/operator/sc01-tc02.md) | |
 RQ02&#8239;-&#8239;01 | CaaS platform shall provide automation/tools/API for governing the configuration of the clusters | [SC01-TC02](scenarios/operator/sc01-tc02.md) , [SC01-TC03](scenarios/operator/sc01-tc03.md) | |
-RQ03&#8239;-&#8239;01 | CaaS platform shall integrate with SSO solution available in charter | vCenter Overview , [SC01-TC02](scenarios/operator/sc01-tc02.md), TODO[fcarta]-Add TMC | |
+RQ03&#8239;-&#8239;01 | CaaS platform shall integrate with SSO solution available in charter | vCenter Overview , [SC01-TC02](scenarios/operator/sc01-tc02.md), TMC Overview | |
 RQ03&#8239;-&#8239;02 | CaaS platform shall provide role based access control by integrating with identity system(Active directory) in charter | vCenter Overview , [SC01-TC02](scenarios/operator/sc01-tc02.md) | |
-RQ04&#8239;-&#8239;01 | CaaS control plane shall provide automation/tools/API for onboarding existing kubernetes clusters | TODO[fcarta] - Add TMC | |
-RQ05&#8239;-&#8239;01 | CaaS platform shall provide automation/tools/API for auditing/ validating the configuration of the clusters | TODO[fcarta] - Add TMC | |
+RQ04&#8239;-&#8239;01 | CaaS control plane shall provide automation/tools/API for onboarding existing kubernetes clusters | TMC Overview | |
+RQ05&#8239;-&#8239;01 | CaaS platform shall provide automation/tools/API for auditing/ validating the configuration of the clusters | TMC Overview | |
 RQ06&#8239;-&#8239;01 | CaaS control plane shall provide tools for accessing the underlying virtual machines that power the kubernetes clusters in a secure way | TODO[fcarta] - add ssh | |
 RQ07&#8239;-&#8239;01 | CaaS control plane shall provide automation/tools/API for creation of kubernetes clusters | [SC02-TC01](scenarios/devops/sc02-tc01.md) | |
 RQ08&#8239;-&#8239;01 | CaaS control plane shall provide automation/tools/API for modifying the kubernetes clusters | [SC02-TC04](scenarios/devops/sc02-tc04.md) | |
@@ -21,7 +21,7 @@ RQ16&#8239;-&#8239;01 | CaaS control plane shall support integration to Charter 
 RQ17&#8239;-&#8239;01 | CaaS platform shall provide monitoring dashboards for operators | TO Oveview [dbott] | |
 RQ18&#8239;-&#8239;01 | CaaS platform shall provide monitoring dashboards for developers | TO Oveview [dbott] | |
 RQ19&#8239;-&#8239;01 | CaaS platform shall provide options to create modify dashboards | TO Oveview [dbott] | |
-RQ20&#8239;-&#8239;01 | CaaS control plane shall provide curated platform(JVM, NodeJS, Python, Go) images |  | |
+RQ20&#8239;-&#8239;01 | CaaS control plane shall provide curated platform(JVM, NodeJS, Python, Go) images | [SC02-TC07](scenarios/devops/sc02-tc07.md) | |
 RQ21&#8239;-&#8239;01 | CaaS control plane shall provide support for canary releases - app with 2 versions |  | |
 RQ22&#8239;-&#8239;01 | CaaS platform shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters | TO Oveview [dbott] | |
 RQ23&#8239;-&#8239;01 | CaaS control plane shall provide tools for collecting metrics from application level objects(JVM, application traces) | TO Oveview [dbott] | |
