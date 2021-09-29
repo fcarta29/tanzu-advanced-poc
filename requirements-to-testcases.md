@@ -22,17 +22,17 @@ RQ17&#8239;-&#8239;01 | CaaS platform shall provide monitoring dashboards for op
 RQ18&#8239;-&#8239;01 | CaaS platform shall provide monitoring dashboards for developers | TO Oveview [dbott] | |
 RQ19&#8239;-&#8239;01 | CaaS platform shall provide options to create modify dashboards | TO Oveview [dbott] | |
 RQ20&#8239;-&#8239;01 | CaaS control plane shall provide curated platform(JVM, NodeJS, Python, Go) images | [SC02-TC07](scenarios/devops/sc02-tc07.md) | |
-RQ21&#8239;-&#8239;01 | CaaS control plane shall provide support for canary releases - app with 2 versions |  | |
+RQ21&#8239;-&#8239;01 | CaaS control plane shall provide support for canary releases - app with 2 versions | [SC02-TC09](scenarios/devops/sc02-tc09.md) | |
 RQ22&#8239;-&#8239;01 | CaaS platform shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters | TO Oveview [dbott] | |
 RQ23&#8239;-&#8239;01 | CaaS control plane shall provide tools for collecting metrics from application level objects(JVM, application traces) | TO Oveview [dbott] | |
 RQ24&#8239;-&#8239;01 | CaaS control plane shall provide tools for provisioning load balancers/ingress for the kubernetes clusters |  | |
-RQ25&#8239;-&#8239;01 | CaaS platform shall provide delegated DNS for applications hosted in kubernetes clusters |  | |
+RQ25&#8239;-&#8239;01 | CaaS platform shall provide delegated DNS for applications hosted in kubernetes clusters | [SC02-TC11](scenarios/devops/sc02-tc11.md) | |
 RQ26&#8239;-&#8239;01 | CaaS control plane shall provide GSLB features for applications hosted in kubernetes clusters |  | |
-RQ27&#8239;-&#8239;01 | CaaS control plane shall provide tools to modify load balancer configuration(application timeout, http2 being default) |  | |
-RQ28&#8239;-&#8239;01 | CaaS control plane shall provide L7 routing features based on user or http header information |  | |
+RQ27&#8239;-&#8239;01 | CaaS control plane shall provide tools to modify load balancer configuration(application timeout, http2 being default) | [SC02-TC10](scenarios/devops/sc02-tc10.md) | |
+RQ28&#8239;-&#8239;01 | CaaS control plane shall provide L7 routing features based on user or http header information | [SC02-TC10](scenarios/devops/sc02-tc10.md) | |
 RQ29&#8239;-&#8239;01 | CaaS control plane shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters |  | |
 RQ30&#8239;-&#8239;01 | CaaS control plane shall provide end to end mutual TLS for application connectivity |  | |
-RQ31&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh |  | |
+RQ31&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh | [SC02-TC08](scenarios/devops/sc02-tc08.md) | |
 RQ32&#8239;-&#8239;01 | CaaS platform shall provide application connectivity across deployment technologies(VM, kubernetes clusters |  | |
-RQ33&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network |  | |
+RQ33&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network | [SC02-TC12](scenarios/devops/sc02-tc12.md) | |
 RQ34&#8239;-&#8239;01 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure GSLB |  | |
