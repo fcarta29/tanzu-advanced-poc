@@ -30,9 +30,8 @@ RQ25&#8239;-&#8239;01 | CaaS platform shall provide delegated DNS for applicatio
 RQ26&#8239;-&#8239;01 | CaaS control plane shall provide GSLB features for applications hosted in kubernetes clusters |  | |
 RQ27&#8239;-&#8239;01 | CaaS control plane shall provide tools to modify load balancer configuration(application timeout, http2 being default) | [SC02-TC10](scenarios/devops/sc02-tc10.md) | |
 RQ28&#8239;-&#8239;01 | CaaS control plane shall provide L7 routing features based on user or http header information | [SC02-TC10](scenarios/devops/sc02-tc10.md) | |
-RQ29&#8239;-&#8239;01 | CaaS control plane shall provide tools to monitor load balancer/ ingress of the applications deployed in kubernetes clusters |  | |
-RQ30&#8239;-&#8239;01 | CaaS control plane shall provide end to end mutual TLS for application connectivity |  | |
-RQ31&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh | [SC02-TC08](scenarios/devops/sc02-tc08.md) | |
-RQ32&#8239;-&#8239;01 | CaaS platform shall provide application connectivity across deployment technologies(VM, kubernetes clusters |  | |
-RQ33&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network | [SC02-TC12](scenarios/devops/sc02-tc12.md) | |
-RQ34&#8239;-&#8239;01 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure GSLB |  | |
+RQ29&#8239;-&#8239;01 | CaaS control plane shall provide end to end mutual TLS for application connectivity |  | |
+RQ30&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh | [SC02-TC08](scenarios/devops/sc02-tc08.md) | |
+RQ31&#8239;-&#8239;01 | CaaS platform shall provide application connectivity across deployment technologies(VM, kubernetes clusters |  | |
+RQ32&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network | [SC02-TC12](scenarios/devops/sc02-tc12.md) | |
+RQ33&#8239;-&#8239;01 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure GSLB |  | |
