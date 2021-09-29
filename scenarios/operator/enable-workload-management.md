@@ -16,13 +16,13 @@ Enabling Workload Management in a vSphere cluster will provide Kubernetes ready 
 
 2. Navigate to **Menu > Workload Management**; from the *Getting Started with Workload Management* drop-down, select the ***vCenter_Server_Name***; select **Enable**.
 
-3. Verify Workload Management recognizes the *vSphere_Cluster_Name* as compatible. If not, revisit [vSphere with Kubernetes System Requirements and Topologies](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-B1388E77-2EEC-41E2-8681-5AE549D50C77.html) and address any issues preventing workload management compatibility.
+3. Verify Workload Management recognizes the *vSphere_Cluster_Name* as compatible. If not, revisit [vSphere with Tanzu System Requirements and Topologies](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-B1388E77-2EEC-41E2-8681-5AE549D50C77.html) and address any issues preventing workload management compatibility.
 
 4. Select the compatible ***vSphere_Cluster_Name***. Then, select **Next**.
 
 5. For the Control Plane Size option, select **Small**. The, select **Next**.
 
-6. Continue through both *Network* and *Storage* sections, populating all fields for integration with the test environment infrastructure. For additional guidance, reference: [Enable vSphere with Kubernetes on a Cluster with NSX-T Data Center](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-287138F0-1FFD-4774-BBB9-A1FAB932D1C4.html).
+6. Continue through both *Network* and *Storage* sections, populating all fields for integration with the test environment infrastructure. For additional guidance, reference: [Enable vSphere with Tanzu on a Cluster with NSX-T Data Center](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-287138F0-1FFD-4774-BBB9-A1FAB932D1C4.html).
 
 7. Verify that the *Review and Confirm* section reports successful completion of all sections for the planned SC configuration. Then, select **FINISH** to enable the SC.
 

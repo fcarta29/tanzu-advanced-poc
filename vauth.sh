@@ -5,6 +5,8 @@ server=''
 namespace=''
 cluster=''
 
+trap 'catch' ERR
+
 print_usage() {
    # Display Help
    echo
@@ -18,6 +20,12 @@ print_usage() {
    echo "n     Supervisor Cluster namespace"
    echo "c     Workload Cluster name"
    echo
+}
+
+catch() {
+  # Make sure when authentication fails to clean up
+  unset KUBECTL_VSPHERE_PASSWORD
+  cp ~/.kube/config-tmp ~/.kube/config
 }
 
 while getopts 'u:p:s:n:c:' flag
