@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: wrkldmgmt-storage-policy
+  storageClassName: wrkldmgmt-storage-policy 
   resources:
     requests:
         storage: 9Gi
