@@ -47,7 +47,7 @@ spec:
       headers:
         end-user:
           exact: v1
-    timeout: 0.1s
+    timeout: 0.5s
     route:
     - destination:
         host: helloworld
