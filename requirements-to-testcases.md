@@ -33,5 +33,5 @@ RQ28&#8239;-&#8239;01 | CaaS control plane shall provide L7 routing features bas
 RQ29&#8239;-&#8239;01 | CaaS control plane shall provide end to end mutual TLS for application connectivity |  | |
 RQ30&#8239;-&#8239;01 | CaaS control plane shall provide lifecycle management functions(create, modify, delete) for Service mesh | [SC02-TC08](scenarios/devops/sc02-tc08.md) | |
 RQ31&#8239;-&#8239;01 | CaaS platform shall provide application connectivity across deployment technologies(VM, kubernetes clusters |  | |
-RQ32&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network | [SC02-TC12](scenarios/devops/sc02-tc12.md) | |
+RQ32&#8239;-&#8239;01 | CaaS platform shall provide policies for controlling traffic inside the kubernetes network | [Antrea](https://antrea.io/), [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/) | |
 RQ33&#8239;-&#8239;01 | CaaS platform shall provide necessary kubernetes primitives(CRDs, operators etc) for declaratively configure GSLB |  | |

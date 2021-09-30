@@ -2,7 +2,7 @@ Admin
 
 ID | Requirement Description | AVI UI | AKO/AMKO* | TSM | Persona |
 --- | --- | --- | --- | --- | --- |
-| RQ21 - 01 |  CaaS control plane shall provide support for canary releases - app with 2 versions | --- | --- | X | DevOps/Developer |
+| RQ21 - 01 |  CaaS control plane shall provide support for canary releases - app with 2 versions | ** | ** | X | DevOps/Developer |
 RQ25 - 01 | CaaS platform shall provide delegated DNS for applications hosted in kubernetes cluster | X | X | N/A | DevOps |
 RQ26 - 01 | CaaS control plane shall provide GSLB features for applications hosted in kubernetes clusters | X | ** | N/A | DevOps |
 RQ27 - 01 | CaaS control plane shall provide tools to modify load balancer configuration(application timeout, http2 being default) | X | --- | X | DevOps/Developer |

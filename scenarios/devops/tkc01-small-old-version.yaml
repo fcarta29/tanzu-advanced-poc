@@ -1,0 +1,20 @@
+apiVersion: run.tanzu.vmware.com/v1alpha1
+kind: TanzuKubernetesCluster
+metadata:
+  name: tkc01-small-old-version
+spec:
+  distribution:
+    version: v1.18.5+vmware.1-tkg.1.c40d30d
+  topology:
+    controlPlane:
+      class: guaranteed-medium
+      count: 1
+      storageClass: vsan-default-storage-policy
+    workers:
+      class: guaranteed-xlarge
+      count: 1
+      storageClass: vsan-default-storage-policy
+  settings:
+    storage:
+      classes: ["vsan-default-storage-policy"]              #Named PVC storage classes
+      defaultClass: vsan-default-storage-policy                    #Default PVC storage class
