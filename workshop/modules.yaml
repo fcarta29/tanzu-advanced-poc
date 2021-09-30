@@ -10,10 +10,14 @@ modules:
         name: Workshop Summary
         exit_sign: Finish Workshop
 config:
-    # vars:
-    # - name: LAB_SLOT_ID
-    #   value: 240
-    # - name: LAB_DOMAIN
-    #   value: pez.pivotal.io
-    # - name: LAB_CF_DEPLOYID
-    #   value: cf-a7b9ebc208b14dec252e      
+    vars:
+    - name: SC_API_VIP
+      value: SC_API_VIP
+    - name: SC_USER_NAME
+      value: SC_USER_NAME
+    - name: TKC_NAMESPACE
+      value: TKC_NAMESPACE     
+    - name: TKC_NAME
+      value: TKC_NAME   
+    - name: LOADBALANCER_EXTERNAL_IP
+      value: LOADBALANCER_EXTERNAL_IP   
