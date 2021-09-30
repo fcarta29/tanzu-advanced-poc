@@ -3,7 +3,9 @@ modules:
         name: Workshop Overview
         exit_sign: Start Workshop
     labs/testcase:
-        name: Test Case       
+        name: Test Case
+    labs/setup:
+        name: Setup               
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop

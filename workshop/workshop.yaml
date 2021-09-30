@@ -3,5 +3,6 @@ name: Kubernetes Fundamentals
 modules:
     activate:
     - index
+    - labs/setup
     - labs/testcase
     - finish
