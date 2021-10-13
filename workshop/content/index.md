@@ -1,41 +1,42 @@
-##   Tanzu environment with all CLI installed.
+#
 
-<br/>
-
-In this workshop env you can get hands on with Tanzu products. Below is the list of scenarios you can try: -
-
-Select the scenario you want to test
+In this workshop environment you can get hands on with Tanzu products. Below is the list of scenario test cases you can try by selecting the scenario test case you want to test and then clicking `Start Workshop` at the bottom of the page to start the workshop.
 
 -----------------------------------------------
 
-### Operator 
+## Operator
 
 -----------------------------------------------
 
-SC01-TC01: Enable a vSphere Cluster for Kubernetes Workloads
+### SC01-TC01: Enable a vSphere Cluster for Kubernetes Workloads
 
 ```execute
 sh deploy.sh scenarios/operator/sc01-tc01.md
 ```
 
-SC01-TC02: Create and Configure a Supervisor Cluster Namespace(s) with RBAC
+### SC01-TC02: Create and Configure a Supervisor Cluster Namespace(s) with RBAC
 
 ```execute
 sh deploy.sh scenarios/operator/sc01-tc02.md
-``` 
+```
 
-SC01-TC03: Create and Configure a Supervisor Cluster Namespace(s) with Resource Limitations
+### SC01-TC03: Create and Configure a Supervisor Cluster Namespace(s) with Resource Limitations
 
 ```execute
 sh deploy.sh scenarios/operator/sc01-tc03.md
 ```
 
+### SC01-TC04: Supervisor Cluster Control Plane Access and Logging
+
+```execute
+sh deploy.sh scenarios/operator/sc01-tc04.md
+```
+
 -----------------------------------------------
 
-### Devops/Developer
+## Devops
 
 -----------------------------------------------
-
 
 SC02-TC01: Provision a Tanzu Kubernetes Cluster Using the Tanzu Kubernetes Grid Service
 

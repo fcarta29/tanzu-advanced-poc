@@ -1,14 +1,14 @@
 modules:
     index:
-        name: Workshop Overview
+        name: Tanzu Workshop Overview
         exit_sign: Start Workshop
     labs/testcase:
         name: Test Case
     labs/setup:
         name: Setup               
     finish:
-        name: Workshop Summary
-        exit_sign: Finish Workshop
+        name: Tanzu Workshop Complete
+        exit_sign: Exit Workshop
 config:
     vars:
     - name: SC_API_VIP
