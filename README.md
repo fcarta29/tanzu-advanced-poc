@@ -88,8 +88,13 @@ Test Case ID | Test Case Description |
 [SC02-TC01](scenarios/devops/sc02-tc01.md) | Provision a Tanzu Kubernetes Cluster Using the Tanzu Kubernetes Grid Service |
 [SC02-TC02](scscenarios/devops/sc02-tc02.md) | Apply RBAC to a Tanzu Kubernetes Grid Cluster and Granting Developer Access |
 [SC02-TC03](scenarios/devops/sc02-tc03.md) | Use Pod Security Policies with a Tanzu Kubernetes Cluster(s) |
-[SC02-TC04](scenarios/devops/sc02-tc04.md) | Create Guest Cluster |
-[SC02-TC05](scenarios/devops/sc02-tc05.md) | Create Guest Cluster Mission Control ??? |
+[SC02-TC04](scenarios/devops/sc02-tc04.md) | Registering vSphere with Tanzu as a Management Cluster with Tanzu Mission Control (TMC) and Lifecycling Kubernetes Workload Clusters |
+[SC02-TC05](scenarios/devops/sc02-tc05.md) | Attaching and Detaching Tanzu Kubernetes Clusters with Tanzu Mission Control (TMC) |
 [SC02-TC06](scenarios/devops/sc02-tc06.md) | Configure Guest Workload Cluster for Logging with Tanzu Extension of Fluentbit |
-[SC02-TC07](scenarios/devops/sc02-tc07.md) |  |
+[SC02-TC07](scenarios/devops/sc02-tc07.md) | Creating Consistent and Secure Build Images for Applications |
 [SC02-TC08](scenarios/devops/sc02-tc08.md) | Service Mesh Lifecycle Management |
+[SC02-TC09](scenarios/devops/sc02-tc09.md) | CaaS control plane shall provide support for canary releases - app with 2 versions |
+[SC02-TC10](scenarios/devops/sc02-tc10.md) | Application Network Traffic Routing (Layer 7) |
+[SC02-TC11](scenarios/devops/sc02-tc11.md) | Delegated DNS for Applications hosted on Tanzu Kubernetes Clusters |
+[SC02-TC12](scenarios/devops/sc02-tc12.md) | Traffic Management inside Kubernetes Networking |
+[SC02-TC13](scenarios/devops/sc02-tc13.md) | Tanzu Kubernetes Cluster Ingress with NSX-ALB |
