@@ -1,6 +1,5 @@
-
-
 # Tanzu Advanced Proof of Concept (PoC) Test Plan
+
 This PoC test plan and evaluation process focuses on demonstrating functional operation, capabilities, and features of the Tanzu Advanced product suite.
 
 **IMPORTANT** - This pre-sales offering does not consider all best practices and recommendations for production or extended pilot use.  VMware strongly encourages Customers to thoroughly review all publicly available product documentation and engage with the Professional Services Organization and Partners before going forward with any production design decisions. The PoC evaluation system is not the appropriate platform for intensive and lengthy performance testing and evaluation.
@@ -50,28 +49,65 @@ Test cases involving the application developer role require at least two (2) use
 
 >NOTE: BEFORE PROCEEDING TO THE TEST CASES, READ THIS SECTION IN ITS ENTIRETY AS IT INCLUDES PREPARATIONS AND PREREQUISITES REQUIRED TO SUCCESSFULLY RUN THE TEST CASES.
 
-The test cases within this document assume that the installation of vSphere 7 with Tanzu and NSX-T are complete and deployed to an infrastructure prepared according to the requirements detailed in the "VMware vSphere 7 with Tanzu PoC Prerequisites and Preparations Guide." Additionally, it assumes that the Customer engaged with a VMware Systems Engineer for the vSphere 7 with Tanzu PoC design and installation.  The following subsections identify the environment expectations, software and tools required for effectively conducting the test and evaluation process.
-
-TODO[fcarta] - Add info about Tanzu SaaS (TMC,TO,TAC,TSM)
+The test cases within this document assume that the installation of vSphere 7 with Tanzu, NSX-T, Cloud Services like Tanzu Mission Control (TMC), Tanzu Service Mesh (TSM), Tanzu Observability (TO), and Tanzu Applicaiton Catalog (TAC) are complete and deployed to an infrastructure prepared according to the requirements detailed in the "VMware vSphere 7 with Tanzu PoC Prerequisites and Preparations Guide." Additionally, it assumes that the Customer engaged with a VMware Systems Engineer for the vSphere 7 with Tanzu PoC design and installation.  The following subsections identify the environment expectations, software and tools required for effectively conducting the test and evaluation process.
 
 ### VMware Software Build Information
 
 For the deployed vSphere 7 with Tanzu PoC environment, populate the following table with the system components’ version and build number.
 
-TODO[fcarta] - Update BOM with correct versions
 Software Product | Version | Build
 --- | --- | --- |
-VMware Cloud Foundation | 4.2.1 | |
-VMware vSphere ESXi | 7.0.1d |  |
-VMware vCenter | 7.0.1d |  |
-VMware NSX-T | 3.1.0 |  |
-vRealize Operations Manager |   |   |
-vRealize LogInsight |   |   |
+VMware Cloud Foundation | 4.2.1 | x |
+VMware vSphere ESXi | 7.0.1d | x |
+VMware vCenter | 7.0.1d | x |
+VMware NSX-T | 3.1.0 | x |
+vRealize Operations Manager | x | x |
+vRealize LogInsight | x | x |
 
 ### Software Test Tools
-TODO[fcarta] - add management container instructions / workshop instructions
+
+This project contains a `Dockerfile` that comes with preconfigured CLIs like `kubectl`, `tanzu`, `kubectl-vshpere`, ... to provide a pre-built and configured environment that makes executing the provided test cases easier (Called here as Local Management Container).To be able to connect with a Kubernetes Cluster copy/download that Kubernetes Cluster's `kubeconfig` to a file located in `config/kube.conf` inside this project structure (This file should not be checked into a public source repository). When running the Local Management Container from the supplied `make` file the `kubeconfig` will be automatically mapped/copied to the running continer and allow for `kubectl` commands to your Kubernetes Cluster.
+
+#### Building and Running the Local Management Container
+
+##### Build Container
+
+```sh
+make build
+```
+
+##### Rebuild Container
+
+```sh
+make rebuild
+```
+
+##### Start and exec to the container
+
+```sh
+make run
+```
+
+##### Join Running Container
+
+```sh
+make join
+```
+
+##### Start an already built Local Management Container
+
+```sh
+make start
+```
+
+##### Stop a running Local Management Container*
+
+```sh
+make stop
+```
 
 ### Test-Cases-Inventory
+
 #### Operator SC01: Operate and Manage Kubernetes Infrastructure
 
 Test Case ID | Test Case Description |
@@ -88,7 +124,7 @@ Test Case ID | Test Case Description |
 [SC02-TC01](scenarios/devops/sc02-tc01.md) | Provision a Tanzu Kubernetes Cluster Using the Tanzu Kubernetes Grid Service |
 [SC02-TC02](scscenarios/devops/sc02-tc02.md) | Apply RBAC to a Tanzu Kubernetes Grid Cluster and Granting Developer Access |
 [SC02-TC03](scenarios/devops/sc02-tc03.md) | Use Pod Security Policies with a Tanzu Kubernetes Cluster(s) |
-[SC02-TC04](scenarios/devops/sc02-tc04.md) | Registering vSphere with Tanzu as a Management Cluster with Tanzu Mission Control (TMC) and Lifecycling Kubernetes Workload Clusters |
+[SC02-TC04](scenarios/devops/sc02-tc04.md) | Using vSphere with Tanzu as a Management Cluster with Tanzu Mission Control (TMC) |
 [SC02-TC05](scenarios/devops/sc02-tc05.md) | Attaching and Detaching Tanzu Kubernetes Clusters with Tanzu Mission Control (TMC) |
 [SC02-TC06](scenarios/devops/sc02-tc06.md) | Configure Guest Workload Cluster for Logging with Tanzu Extension of Fluentbit |
 [SC02-TC07](scenarios/devops/sc02-tc07.md) | Creating Consistent and Secure Build Images for Applications |
