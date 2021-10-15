@@ -1,3 +1,4 @@
 config/kube.conf
 .DS_Store
 bin
+eduk8s
