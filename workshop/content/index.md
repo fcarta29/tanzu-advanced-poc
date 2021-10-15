@@ -85,12 +85,6 @@ sh deploy.sh scenarios/devops/sc02-tc09.md
 sh deploy.sh scenarios/devops/sc02-tc10.md
 ```
 
-**SC02-TC10: CaaS control plane shall provide L7 routing features based on user or http header information**
-
-```execute
-sh deploy.sh scenarios/devops/sc02-tc10.md
-```
-
 **SC02-TC11: CaaS platform shall provide delegated DNS for applications hosted in kubernetes clusters**
 
 ```execute
