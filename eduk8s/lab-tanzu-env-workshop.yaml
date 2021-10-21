@@ -1,0 +1,41 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: lab-tanzu-env
+  namespace: portal-ui
+spec:
+  content:
+    files: github.com/fcarta29/tanzu-advanced-poc
+    image: fcarta29/eduk8s-tanzu-workshop:latest
+  description: An workshop env to explore Tanzu
+  difficulty: intermediate
+  duration: 120m
+  session:
+    applications:
+      docker:
+        enabled: true
+      registry:
+        enabled: true
+      terminal:
+        enabled: true
+    namespaces:
+      budget: xx-large
+    objects:
+    - apiVersion: rbac.authorization.k8s.io/v1
+      kind: ClusterRoleBinding
+      metadata:
+        name: $(session_namespace)-cluster-admin
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: ClusterRole
+        name: cluster-admin
+      subjects:
+      - kind: ServiceAccount
+        name: $(service_account)
+        namespace: $(workshop_namespace)
+  tags:
+  - containers
+  title: Tanzu Advanced 
+  url: https://github.com/fcarta29/tanzu-advanced-poc
+  vendor: eduk8s.io
+  

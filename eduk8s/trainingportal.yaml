@@ -1,0 +1,19 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: portal
+  namespace: portal-ui
+spec:
+  portal:
+    capacity: 20
+    expires: 120m
+    orphaned: 5m
+    password: <SUPER SECURE PASSWORD HERE>
+    registration:
+      type: anonymous
+    reserved: 0
+    sessions:
+      maximum: 20
+    title: Tanzu Advanced Workshop Portal
+  workshops:
+  - name: lab-tanzu-env
